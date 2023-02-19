@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-::selection{
-  color: var(--bg-color);
-  background: var(--second-color);
-}
-
 a{
   text-decoration: none;
 }
@@ -41,7 +36,7 @@ header{
   left: 0;
   width: 100%;
   z-index: 200;
-  background-color: var(--bg-others);
+  background-color: #078F0C;
 }
 
 .nav{
@@ -68,8 +63,8 @@ header{
   padding: 8px 14px;
   font-weight: 500;
   border-radius: 4px;
-  background: var(--second-color);
-  color: var(--bg-color);
+  background: #662107;
+  color: white;
 }
 
 .login:hover{
@@ -80,7 +75,7 @@ header{
 .home{
   width: 100%;
   min-height: 440px;
-  background: var(--bg-others);
+  background: #078F0C;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -100,42 +95,6 @@ header{
   font-size: 1rem;
   font-weight: 400;
 }
-
-.main-filter {
-  border-bottom: 1px solid rgba(51, 49, 49, 0.1);
-  width: 240px;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.post-filter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1.5rem;
-  margin-top: 2rem !important;
-  flex-direction: row;
-  width: 100%;
-}
-
-.filter-item{
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  width: 90px;
-  text-align: center;
-  border: none;
-}
-
-.filter-item:hover {
-  color: red;
-  background: none;
-}
-
-/*.filter-item:active {
-  background-color: none;
-  background: none;
-} */
 
 .post{
   display:grid;
@@ -162,7 +121,6 @@ header{
 .category{
   font-size: 0.9rem;
   font-weight: 500;
-  text-transform: uppercase;
   color: var(--second-color);
 }
 
@@ -179,7 +137,6 @@ header{
 .post-date{
   display: flex;
   font-size: 0.875rem;
-  text-transform: uppercase;
   font-weight: 400;
   margin-top: 4px;
 }
@@ -192,26 +149,6 @@ header{
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.profile{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.profile-img{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  border: 2px solid var(--second-color);
-}
-
-.profile-name{
-  font-size: 0.82rem;
-  font-weight: 500;
 }
 
 .post-header{
@@ -266,9 +203,4 @@ header{
   line-height: 1.7rem;
   margin: 1rem 0;
   text-align: justify;
-}
-
-.list-group-item-action:focus {
-  color: red;
-  background:none;
 }

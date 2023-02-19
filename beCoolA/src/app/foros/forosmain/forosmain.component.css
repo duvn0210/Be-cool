@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-::selection{
-  color: var(--bg-color);
-  background: var(--second-color);
-}
-
 a{
   text-decoration: none;
 }
@@ -162,7 +157,6 @@ header{
 .category{
   font-size: 0.9rem;
   font-weight: 500;
-  text-transform: uppercase;
   color: var(--second-color);
 }
 
@@ -179,7 +173,6 @@ header{
 .post-date{
   display: flex;
   font-size: 0.875rem;
-  text-transform: uppercase;
   font-weight: 400;
   margin-top: 4px;
 }
