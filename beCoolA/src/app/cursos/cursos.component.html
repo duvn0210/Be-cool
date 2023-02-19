@@ -1,0 +1,32 @@
+<app-navlogin></app-navlogin>
+<section class="main">
+  <div class="main--container">
+    <div class="hero">
+      <img src="../../assets/images/vitolda-klein-L3zuSWaCjSk-unsplash.jpg" alt="" srcset="">
+      <div class="logros">
+        <p>¡Recuerda visitar el apartado de logros!</p>
+        <button type="button" class="btn btn-light">Conocer más</button>
+      </div>
+    </div>
+    <div class="filtros">
+      <ul>
+        <li><a class="a-filtros" (click)="mostrarTodo()">Todos</a></li>
+        <li><a class="a-filtros" (click)="mostrarPorType('espiritual')">Espiritu y mente</a></li>
+        <li><a class="a-filtros" (click)="mostrarPorType('fisico')">Fisicos</a></li>
+        <li><a class="a-filtros" (click)="mostrarPorType('Otros')">Otros</a></li>
+      </ul>
+    </div>
+  <div class="container--cursos" >
+    <div class="curso" *ngFor="let curso of mostrarCursos">
+      <div class="img-container">
+        <img [src]="curso.url" class="img-curso">
+        <div class="data">
+          <p>{{curso.name}}</p>
+          <a class="btn btn-dark" routerLink="/cursos/info">Info del curso</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,98 @@
+<div class="div-swiper" style="height: 650px" id="hero">
+  <swiper
+
+    [slidesPerView]= '1'
+    [spaceBetween]= '10'
+    [navigation]= 'true'
+
+    [loop]="true"
+    [autoplay]= '{delay: 4000}'
+>
+<ng-template swiperSlide class="slide">
+  <img src="../../assets/images/pexels-george-milton-7014337 (1).jpg">
+  <div class="image-date">
+    <h2>
+        Llevamos el bienestar <br> a tu
+        casa
+    </h2>
+    <span class="text">Visita nuestra tienda virtual y obtén la atención que te mereces</span>
+    <br>
+    <a class="button btn btn-success" routerLink="/tienda">Clic aquí</a>
+</div>
+</ng-template>
+  <ng-template swiperSlide class="slide">
+    <img class="image"  src="../../assets/images/giorgio-trovato-qlNNYxkKoDc-unsplash.jpg">
+    <div class="image-date">
+      <h2>
+         La mejor opción con <br> membresías
+      </h2>
+      <br>
+      <span class="text">Conoce los beneficios</span>
+      <br>
+      <a class="button btn btn-success" routerLink="/membresias">Saber más</a>
+</div>
+  </ng-template>
+  <ng-template swiperSlide class="slide">
+    <img src="../../assets/images/kevin-ianeselli-ebnlHkqfUHY-unsplash.jpg">
+    <div class="image-date">
+      <h2>
+          Eco-turismo <br>
+      </h2>
+      <span class="text">¡Informate más de nuestras salidas ecológicas!</span>
+      <br>
+      <a class="button btn btn-success" routerLink="/turismo">Salidas BeCool</a>
+</div>
+  </ng-template>
+  <ng-template swiperSlide class="slide">
+    <img src="../../assets/images/pexels-oleksandr-pidvalnyi-12932551.jpg">
+    <div class="image-date">
+      <h2>
+          ¡Conoce nuestro apartado <br> de cursos!
+      </h2>
+      <a class="button btn btn-success" routerLink="/cursos">Cursos</a>
+</div>
+  </ng-template>
+  <ng-template swiperSlide class="slide">
+    <img src="../../assets/images/pexels-rodnae-productions-7468054.jpg">
+    <div class="image-date">
+     <!--  <span class="text">Profesionales en psicología</span> -->
+      <h2>
+          Pide tu cita gratis <br>
+          te escuchamos ¡Te aconsejamos!
+      </h2>
+      <a class="button btn btn-success" routerLink="/contact">Pedir cita</a>
+</div>
+  </ng-template>
+  <ng-template swiperSlide class="slide">
+    <img src="../../assets/images/brooke-cagle--uHVRvDr7pg-unsplash.jpg">
+    <div class="image-date">
+     <!--   -->
+      <h2>
+          Sé parte del equipo<br>
+      </h2>
+      <span class="text">¡Conoce los beneficios de ser Be Cool!</span>
+      <br>
+      <a class="button btn btn-success" routerLink="/contact">Be Cool</a>
+</div>
+  </ng-template>
+
+  <ng-template swiperSlide class="slide">
+    <img src="../../assets/images/arifur-rahman-8NwrVVhVEd0-unsplash.jpg">
+    <div class="image-date">
+     <!--   -->
+      <h2>
+          Compartiendo<br>
+          ideas
+      </h2>
+      <span class="text">Un espacio para escucharte, y compartir experiencias <br>
+      en nuestros grupos de discusión anónimos
+      </span>
+      <br>
+      <a class="button btn btn-success" routerLink="/contact">Grupos</a>
+</div>
+  </ng-template>
+</swiper>
+</div>
+
+
+

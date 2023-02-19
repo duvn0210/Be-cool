@@ -1,0 +1,39 @@
+:root {
+  --color-dark: #212529;
+  --color-brand: #4e57d4;
+ --color-brand-light: #6970dd;
+  --color-brand-rgb: 8, 9, 15;
+  --color-body: #727272;
+  --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+  --transition: all 0.5s ease;
+  --container-color: black;
+  --second-color: #0d6efd;
+  --text-color: #172317;
+  --bg-color: #fff;
+  --bg-others: #141D37;
+  --clr-main: #141d37;
+  --clr-main-light: #141D37;
+  --clr-white: #ececec;
+  --clr-gray: #e2e2e2;
+  --clr-red: #961818;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-brand-light);
+}

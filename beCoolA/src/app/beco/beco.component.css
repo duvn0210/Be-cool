@@ -1,0 +1,75 @@
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-item {
+  background-color: white;
+  padding: 5px 10px 3px 10px;
+  height: 300px;
+  box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+.about-item .iconos{
+  font-size: 43px;
+}
+
+.about-item h3{
+  font-size: 25px;
+}
+
+.about-item hr{
+  width: 46px;
+  height: 3px;
+  background-color: #5fbff9;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+.about-item:hover{
+  /* background-color: #5fbff9; */
+  background-color:  #141D37;
+  transition: all 400ms ease-in-out;
+}
+.about-item:hover .iconos,
+.about-item:hover h3,
+.about-item:hover p{
+  color: #fff;
+}
+.about-item:hover hr{
+  background-color: #fff;
+}
+
+.about-item:hover .iconos,
+.about-item:hover h3,
+.about-item:hover hr{
+  transition: all 400ms ease-in-out;
+}
+
+.about-item p {
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.div-bienestar {
+  margin-top: 15px;
+  margin-left: 40%;
+}

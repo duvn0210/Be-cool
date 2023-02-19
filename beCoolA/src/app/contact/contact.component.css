@@ -1,0 +1,11 @@
+.line {
+  height: 2px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: wheat;
+  margin-bottom: 5px;
+}
+
+.container {
+  padding-bottom: 100px;
+}

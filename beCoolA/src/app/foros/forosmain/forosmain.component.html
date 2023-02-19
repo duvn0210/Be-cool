@@ -1,0 +1,35 @@
+<header>
+  <div class="nav container">
+      <div class="logo" routerLink="/"></div>
+      <a class="login" routerLink="/login">Iniciar sesión</a>
+  </div>
+</header>
+<section class="home" id="home">
+  <div class="home-text container">
+      <h2 class="home-title">Be Cool blog</h2>
+      <span class="home-subtitle">¡Conoce nuestros articulos!</span>
+  </div>
+</section>
+<div class="main-filter">
+  <div class=" post-filter list-group">
+    <button type="button" class=" filter-item list-group-item list-group-item-action" (click)="mostrarTodo()" >Todo</button>
+    <button type="button" class="filter-item list-group-item list-group-item-action" (click)="mostrarPorCategoria('MENTAL')" >Mental</button>
+    <button type="button" class="filter-item list-group-item list-group-item-action" (click)="mostrarPorCategoria('ESPIRITUAL')">Espiritual</button>
+    <button type="button" class="filter-item list-group-item list-group-item-action" (click)="mostrarPorCategoria('FISICA')" >Fisica</button>
+  </div>
+</div>
+
+<section class="post container">
+  <div class="post-box Espiritual main" *ngFor="let card of mostrarCards">
+    <img [src]="card.url" class="post-img">
+    <h2 class="category">{{card.category}}</h2>
+    <a class="post-title" routerLink="/blogs/blog">{{card.title}}</a>
+    <span class="post-date">{{card.date}}</span>
+    <p class="post-description">{{card.post}}</p>
+    <div class="profile">
+      <img src="../../assets/images/foto-perfil-1.jpg" class="profile-img">
+      <span class="profile-name">{{card.name}}</span>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

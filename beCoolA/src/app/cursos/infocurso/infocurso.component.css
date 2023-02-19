@@ -1,0 +1,62 @@
+.main-div {
+  width: 100%;
+  height: 90vh;
+  background-color: var(--bg-others);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.central {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;  border: 1px solid whitesmoke;
+  width: 50%;
+  height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.central h2 {
+  text-align: center;
+}
+
+.central a {
+  border: 1px solid;
+}
+
+.central p {
+  text-align: justify;
+}
+
+.canti {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  margin-left: 60%;
+  background-color: var(--bg-others);
+  color: white;
+  border-radius: 10px;
+}
+
+.canti h5 {
+  color: white;
+}
+
+.canti div {
+  display: flex;
+}
+
+.volver {
+  position: relative;
+  right: 45%;
+  bottom: 15%;
+}
+
+.volver:hover {
+  cursor: pointer;
+}

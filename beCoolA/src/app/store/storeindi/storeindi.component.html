@@ -1,0 +1,33 @@
+<app-navlogin></app-navlogin>
+<section class="containers">
+  <div class="main-container">
+    <div class="image-container">
+      <img src="../../../assets/images/espirituales/01.jpg" class="image">
+    </div>
+    <div class="content">
+      <h3>NombreArticulo</h3>
+      <div class="stars">
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+      </div>
+      <div class="price">
+        <p>Precio: 10$</p>
+      </div>
+      <div class="rout d-flex">
+        <a routerLink="/tienda">Inicio</a><span>/</span><a routerLinkActive="/tienda/articulo">Articulo</a>
+      </div>
+      <div class="descripcion">
+        <p class="lorem"><span>Descripción:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium fuga dolore consequatur. Officia, praesentium quis. Veritatis, neque sint et labore error nobis quasi, sequi vel recusandae iusto modi aspernatur! </p>
+      </div>
+      <div class="cart">
+        <button type="button" class="btn btn-dark">
+          añadir al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

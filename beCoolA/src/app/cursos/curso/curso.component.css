@@ -1,0 +1,86 @@
+.container-main {
+  padding-top: 5%;
+  background-color: var(--bg-others);
+  height: 100vh;
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+
+.cursos {
+  background-color: #2e5266;
+  height: 100%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+
+}
+
+.apartadoprincipal {
+  height: 500px;
+  width: 60%;
+  margin: 15px;
+
+}
+
+.comentarios {
+  background-color: #2e5266;
+  height: 100%;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  padding-top: 10px;
+}
+
+.comentario h6{
+   color: white;
+}
+
+.curso {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid;
+  background-color: darkgrey;
+  color: black;
+  border-radius: 10px;
+}
+
+img {
+  height: 120px;
+  width: 150px;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+video {
+  width: 100%;
+}
+
+.infocurso {
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid;
+  width: 100%;
+}
+
+.curso p {
+  text-align:  center;
+
+}
+
+.titulo {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.titulo h1 {
+  color: white;
+}

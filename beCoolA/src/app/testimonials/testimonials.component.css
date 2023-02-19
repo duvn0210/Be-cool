@@ -1,0 +1,46 @@
+.review small {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.review-head {
+  position: relative;
+}
+
+.review-head::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-shadow {
+  box-shadow: var(--box-shadow);
+}

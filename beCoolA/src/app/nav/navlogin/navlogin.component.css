@@ -1,0 +1,19 @@
+.nav-login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+
+.nav-login img {
+  margin-left: 8%;
+  height: 67.27px;
+  width: 150px;
+}
+
+.sub-div {
+  margin-top: 10px;
+  margin-right: 3%;
+}
+
+

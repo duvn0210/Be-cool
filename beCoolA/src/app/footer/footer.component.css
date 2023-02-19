@@ -1,0 +1,63 @@
+footer {
+  padding-top: 120px;
+  border-top: 1px solid white;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+  color: rgba(255,255,255,0.7);
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ul-servicios li,
+.ul-ubicacion li
+{
+  list-style:circle;
+}
+
+footer .line {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-brand);
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.container-social-media img{
+  width: 200px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 100px;
+}
+
+.social-icons a:hover {
+  background-color: var(--color-brand);
+  color: white;
+}

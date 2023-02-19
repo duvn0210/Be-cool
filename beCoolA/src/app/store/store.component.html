@@ -1,0 +1,91 @@
+<app-navlogin></app-navlogin>
+<div class="main-store d-flex">
+
+  <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+    <h5 class="modal-title text-muted">Articulos Be Cool</h5>
+    <li class="border-top my-3 list-unstyled"></li>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <a class="btn btn-dark btns d-inline-flex align-items-center rounded border-0" (click)="mostrarTodo()">
+          Todos
+        </a>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Espiritu y mente
+        </button>
+        <div class="collapse show" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarPorCategoria('espiritual')">Todo</a></li>
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarporType('Book')">Libros</a></li>
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarporType('antiestres')">Objetos antiestrés</a></li>
+            <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li> -->
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Fisico
+        </button>
+        <div class="collapse show" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarPorCategoria('fisico')">Todo</a></li>
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarporType('Pesa')">Pesas</a></li>
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded" (click)="mostrarporType('Maquina')">Maquinas</a></li>
+            <li><a class="link-dark d-inline-flex text-decoration-none rounded">Suplementos</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ropa-collapse" aria-expanded="false">
+          Ropa Be Cool
+        </button>
+        <div class="collapse show" id="ropa-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Todos</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Pantalones</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Camisetas</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+     <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Cuenta
+        </button>
+        <div class="collapse" id="account-collapse">
+          <p style="font-size: 15px">¡Inicia sesión para añadir compras al carrito y editar tu perfil!</p>
+          <!-- <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Perfil</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Ajustes</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Salir</a></li>
+          </ul> -->
+        </div>
+      </li>
+      <li><a class="btn btn-dark btns" routerLink="/login">Carrito</a></li>
+    </ul>
+  </div>
+  <section class="content-stores w-75">
+    <div class="content-store" >
+      <div class="content border rounded-4" *ngFor="let article of mostrarArticles">
+        <div class="content-article">
+          <div class="image-zoom-wrapper">
+            <img [src]="article.url" class="img-article">
+          </div>
+          <a routerLink="/tienda/articulo">{{article.name}}</a>
+          <div class="stars d-flex flex-direction-row">
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+          </div>
+          <p>{{article.price}}$</p>
+          <div class="cart">
+            <fa-icon [icon]="faCartShopping"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+<app-footer></app-footer>
