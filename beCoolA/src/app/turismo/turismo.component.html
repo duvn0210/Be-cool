@@ -7,7 +7,10 @@
 <section class="home" id="home">
   <div class="home-text container">
       <h2 class="home-title">Be Cool blog</h2>
-      <span class="home-subtitle">¡Conoce nuestros articulos!</span>
+      <div class="subtitle"><span class="home-subtitle">En este apartado encontraras multiples planes para conocer diferentes destinos
+        naturales tanto municipal como nacionalmente, asi podras despejar todas tus emociones en grandes
+        paisajes llenos de mucha naturaleza</span>
+    </div>
   </div>
 </section>
 
@@ -15,7 +18,8 @@
   <div class="post-box Espiritual main" *ngFor="let turismo of turismos">
     <img [src]="turismo.url" class="post-img">
     <a class="post-title" routerLink="/">{{turismo.title}}</a>
-    <span class="post-date">{{turismo.date}}</span>
+    <span class="post-date">Fecha de salida: {{turismo.date}}</span>
+    <span class="post-price">Precio: {{turismo.price}}$</span>
     <p class="post-description">{{turismo.post}}</p>
   </div>
 </section>

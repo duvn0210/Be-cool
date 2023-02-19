@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --bs-list-group-action-hover-color: yellow;
-}
-
 ::selection{
   color: var(--bg-color);
   background: var(--second-color);
